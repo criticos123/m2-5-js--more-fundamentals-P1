@@ -10,12 +10,22 @@
 
 function sumDigits(input) {
   // Your code here
+  let sum = 0;
+  input.forEach((element) => {
+    sum += element;
+  });
+
+  return sum;
 }
 
 // Add 5 more test cases here! 7 total
 expect(sumDigits([2, 5]), 7);
 expect(sumDigits([-1, 0]), -1);
-
+expect(sumDigits([-1, -3]), -4);
+expect(sumDigits([6, 4]), 10);
+expect(sumDigits([-17, 2]), -15);
+expect(sumDigits([7, 7]), 14);
+expect(sumDigits([30, 70]), 100);
 /**
  * -------------------------------------------------------------------
  * ⚠️ No changes necessary below. ⚠️
@@ -23,7 +33,7 @@ expect(sumDigits([-1, 0]), -1);
  */
 function expect(result, value) {
   if (result === value) {
-    console.log('✅ Test succeeded');
+    console.log("✅ Test succeeded");
   } else {
     console.log(`⛔️ Expected “${result}” to equal “${value}”`);
   }
