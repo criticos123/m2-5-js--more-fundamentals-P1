@@ -20,13 +20,14 @@ const reverseString = (str) => {
 
 // Expand each of the following and get the result of the expression
 // 1-1
-square(decrement(square(decrement(3))));
-
+let answer= square(decrement(square(decrement(3))));
+console.log(answer);
 // 1-2
-decrement(decrement(square(square(3))));
-
+let answer2=decrement(decrement(square(square(3))));
+console.log(answer2);
 // 1-3
-duplicateString(reverseString('hello'));
-
+let answer3=duplicateString(reverseString('hello'));
+console.log(answer3);
 // 1-4
-reverseString(duplicateString(duplicateString('foo')));
+let answer4=reverseString(duplicateString(duplicateString('foo')));
+console.log(answer4);
