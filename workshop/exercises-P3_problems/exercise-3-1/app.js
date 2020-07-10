@@ -14,7 +14,6 @@ function clicker(event) {
   switch (buttontarget) {
     case "btn1":
       buttonid.style.opacity = 0;
-      buttonid.classList.toggle("buttons");
       break;
     case "btn2":
       buttonid.style.backgroundColor = "crimson";
