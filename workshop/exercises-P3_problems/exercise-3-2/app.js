@@ -15,7 +15,7 @@ for (let i = 1; i < 5; i++) {
   element.style.backgroundColor = "gold";
 }
 const toggleColor = (id, color) => {
-  if ((id.style.backgroundColor = "gold")) {
+  if (id.style.backgroundColor === "gold") {
     id.style.backgroundColor = color;
   } else {
     id.style.backgroundColor = "gold";
@@ -41,8 +41,8 @@ function clicker(event) {
     case "btn4":
       buttonid.classList.toggle("jitters");
       break;
-      case:"reset":
-      resetBtn():
+    case "reset":
+      resetBtn();
     default:
       break;
   }
